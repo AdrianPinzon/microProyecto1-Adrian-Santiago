@@ -1,0 +1,670 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+#amarillo {
+    background-color: rgb(240, 229, 61);
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    clip-path: circle(50% at 100% 0);
+}
+
+
+#amarillo:active {
+    z-index: 1;
+    position: relative;
+    background-color:rgb(255, 242, 58);
+    box-shadow: 0 0 15px rgb(255, 246, 115), 0 0 30px rgb(255, 243, 71), 0 0 45px rgb(255, 240, 36);
+    transform: translateY(-1.5px);
+    transform: translateX(-1.5px);
+    transition: 0.09s;
+}
+/* ves que los de Display no tienen interaccion con los clicks ni aquí ni en el archivo .js*/
+#amarilloDisplay {
+    background-color: rgb(240, 229, 61);
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    clip-path: circle(50% at 100% 0);
+}
+
+#titulo {
+    margin-left: 15px;
+    margin-bottom: 15px;
+    font-size: 3.5vw;
+    display: flex;
+    top: 0;
+    justify-content: start;
+
+}
+
+#amarilloNeonDisplay {
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    clip-path: circle(50% at 100% 0);
+    z-index: 1;
+    position: relative;
+    background-color:rgb(255, 242, 58);
+    box-shadow: 0 0 15px rgb(255, 246, 115), 0 0 30px rgb(255, 243, 71), 0 0 45px rgb(255, 240, 36);
+    transform: translateY(-1.5px);
+    transform: translateX(-1.5px);
+    transition: 0.09s;
+}
+
+#verde {
+    background-color: rgb(88, 219, 33);
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    clip-path: circle(50% at 0 0);
+}
+
+#verde:active {
+    z-index: 1;
+    position: relative;
+    background-color: rgb(85, 255, 13);
+    box-shadow: 0 0 15px rgb(135, 255, 84), 0 0 30px rgb(105, 255, 41), 0 0 45px rgb(77, 220, 15);
+    transform: translateY(-1.5px);
+    transform: translateX(1.5px);
+    transition: 0.09s;
+}
+
+#verdeDisplay {
+
+    background-color: rgb(88, 219, 33);
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    clip-path: circle(50% at 0 0);
+
+}
+
+#verdeNeonDisplay {
+    
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    clip-path: circle(50% at 0 0);
+    z-index: 1;
+    position: relative;
+    background-color: rgb(85, 255, 13);
+    box-shadow: 0 0 15px rgb(135, 255, 84), 0 0 30px rgb(105, 255, 41), 0 0 45px rgb(77, 220, 15);
+    transform: translateY(-1.5px);
+    transform: translateX(1.5px);
+    transition: 0.09s;
+
+}
+
+#azul {
+    background-color: rgb(16, 16, 219);
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    clip-path: circle(50% at 100% 100%);
+}
+
+#azul:active {
+    z-index: 1;
+    position: relative;
+    background-color:rgb(79, 217, 255);
+    box-shadow: 0 0 15px rgb(106, 240, 255), 0 0 30px rgb(40, 233, 255), 0 0 45px rgb(0, 229, 255);
+    transform: translateY(1.5px);
+    transform: translateX(-1.5px);
+    transition: 0.09s;
+}
+
+#azulDisplay {
+
+    background-color: rgb(16, 16, 219);
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    clip-path: circle(50% at 100% 100%);
+
+}
+
+#azulNeonDisplay {
+
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    clip-path: circle(50% at 100% 100%);
+    z-index: 1;
+    position: relative;
+    background-color:rgb(79, 217, 255);
+    box-shadow: 0 0 15px rgb(106, 240, 255), 0 0 30px rgb(40, 233, 255), 0 0 45px rgb(0, 229, 255);
+    transform: translateY(1.5px);
+    transform: translateX(-1.5px);
+    transition: 0.09s;
+
+}
+
+#rojo {
+
+    background-color: rgb(223, 20, 20);
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    clip-path: circle(50% at 0 100%);
+}
+
+#rojo:active {
+    z-index: 1;
+    position: relative;
+    background-color:rgb(255, 11, 11);
+    box-shadow: 0 0 15px rgb(255, 106, 106), 0 0 30px rgb(255, 40, 40), 0 0 45px rgb(255, 0, 0);
+    transform: translateY(1.5px);
+    transform: translateX(1.5px);
+    transition: 0.09s;
+}
+
+#rojoDisplay {
+
+    background-color: rgb(223, 20, 20);
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    clip-path: circle(50% at 0 100%);
+}
+
+#rojoNeonDisplay {
+
+    border: none;
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    clip-path: circle(50% at 0 100%);
+    z-index: 1;
+    position: relative;
+    background-color:rgb(255, 11, 11);
+    box-shadow: 0 0 15px rgb(255, 106, 106), 0 0 30px rgb(255, 40, 40), 0 0 45px rgb(255, 0, 0);
+    transform: translateY(1.5px);
+    transform: translateX(1.5px);
+    transition: 0.09s;
+
+}
+
+
+#comenzar {
+    background-color: rgb(151, 235, 207);
+    font-size: 30%;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+/* hasta acá estoy con lo botones y comienzo con los divs. este primero es el del gif blanco y negro*/
+
+.botones {
+    background-image: url("./black\ and\ white\ animation\ GIF\ by\ The\ New\ Big\ Poppa\ E.gif");
+    background-position: center;
+    background-size: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-right: 10%;
+    margin-left: 10%;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+}
+.press:hover {
+    /* esto no es un div pero es una animacion para todos los botones, 
+    que hace que cuando le pases el mouse por encima pareciera que se levantan*/
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 15px rgb(57, 57, 57);
+
+}
+
+.bottom {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#puntaje {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.cuerpo {
+    height: 6vh;
+}
+body {
+    background-image: url(./yellow-orange-background.jpg);
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.container .overlay {
+    position: fixed;
+    background-color:rgb(0,0,0);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease-in;
+    z-index: 50;
+    display: none;
+}
+
+.container .panel {
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    width: 70%;
+    height: 70vh;
+    z-index: 1000;
+    display: none;
+}
+/*hasta acá modifico los divs y comienzo la parte de lo responsive, 
+faltan darle responsividad a los botones auxiliares pero eso se hace despues */
+@media (min-width: 660px) {
+    #titulo {
+        display: block;
+        font-size: 3.5vh;
+    }
+    
+}
+@media (max-width: 700px) {
+
+
+    .botones {
+        height: 65vh;
+    }
+
+    .cuerpo {
+        height: 10vh;
+    }
+
+    .bottom {
+        height: 25vh;
+    }
+
+    #azul {
+        height: 150px;
+        width: 150px;
+    }
+    #azulDisplay {
+        height: 150px;
+        width: 150px;
+    }
+    #azulNeonDisplay {
+        height: 150px;
+        width: 150px;
+    }
+    #amarillo {
+        height: 150px;
+        width: 150px;
+    }
+    #amarilloDisplay {
+        height: 150px;
+        width: 150px;
+    }
+    #amarilloNeonDisplay {
+        height: 150px;
+        width: 150px;
+    }
+    #verde {
+        height: 150px;
+        width: 150px;
+    }
+    #verdeDisplay {
+        height: 150px;
+        width: 150px;
+    }
+    #verdeNeonDisplay {
+        height: 150px;
+        width: 150px;
+    }
+    #rojo {
+        height: 150px;
+        width: 150px;
+    }
+    #rojoDisplay {
+        height: 150px;
+        width: 150px;
+    }
+
+    #rojoNeonDisplay {
+        height: 150px;
+        width: 150px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+
+    .botones {
+        height: 50vh;
+    }
+
+    .cuerpo {
+        height: 20vh;
+    }
+
+    .bottom {
+        height: 30vh;
+    }
+
+    #azul {
+        height: 125px;
+        width: 125px;
+    }
+    #azulDisplay {
+        height: 125px;
+        width: 125px;
+    }
+    #azulNeonDisplay {
+        height: 125px;
+        width: 125px;
+    }
+    #amarillo {
+        height: 125px;
+        width: 125px;
+    }
+    #amarilloDisplay {
+        height: 125px;
+        width: 125px;
+    }
+    #amarilloNeonDisplay {
+        height: 125px;
+        width: 125px;
+    }
+    #verde {
+        height: 125px;
+        width: 125px;
+    }
+    #verdeDisplay {
+        height: 125px;
+        width: 125px;
+    }
+    #verdeNeonDisplay {
+        height: 125px;
+        width: 125px;
+    }
+    #rojo {
+        height: 125px;
+        width: 125px;
+    }
+    #rojoDisplay {
+        height: 125px;
+        width: 125px;
+    }
+    #rojoNeonDisplay {
+        height: 125px;
+        width: 125px;
+    }
+    
+}
+
+@media (max-width: 345px) {
+
+    .botones {
+        height: 50vh;
+    }
+
+    .cuerpo {
+        height: 20vh;
+    }
+
+    .bottom {
+        height: 30vh;
+    }
+
+    #azul {
+        height: 100px;
+        width: 100px;
+    }
+    #azulDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #azulNeonDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #amarillo {
+        height: 100px;
+        width: 100px;
+    }
+    #amarilloDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #amarilloNeonDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #verde {
+        height: 100px;
+        width: 100px;
+    }
+    #verdeDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #verdeNeonDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #rojo {
+        height: 100px;
+        width: 100px;
+    }
+    #rojoDisplay {
+        height: 100px;
+        width: 100px;
+    }
+
+    #rojoNeonDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    
+}
+
+@media (min-width: 900px) {
+
+    #azul {
+        height: 350px;
+        width: 350px;
+    }
+    #azulDisplay {
+        height: 350px;
+        width: 350px;
+    }
+    #azulNeonDisplay {
+        height: 350px;
+        width: 350px;
+    }
+    #amarillo {
+        height: 350px;
+        width: 350px;
+    }
+    #amarilloDisplay {
+        height: 350px;
+        width: 350px;
+    }
+    #amarilloNeonDisplay {
+        height: 350px;
+        width: 350px;
+    }
+    #verde {
+        height: 350px;
+        width: 350px;
+    }
+    #verdeDisplay {
+        height: 350px;
+        width: 350px;
+    }
+    #verdeNeonDisplay {
+        height: 350px;
+        width: 350px;
+    }
+    #rojo {
+        height: 350px;
+        width: 350px;
+    }
+    #rojoDisplay {
+        height: 350px;
+        width: 350px;
+    }
+    #rojoNeonDisplay {
+        height: 350px;
+        width: 350px;
+    }
+    
+}
+
+@media (max-width: 345px) {
+
+    .botones {
+        height: 50vh;
+    }
+
+    .cuerpo {
+        height: 20vh;
+    }
+
+    .bottom {
+        height: 30vh;
+    }
+
+    #azul {
+        height: 100px;
+        width: 100px;
+    }
+    #azulDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #azulNeonDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #amarillo {
+        height: 100px;
+        width: 100px;
+    }
+    #amarilloDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #amarilloNeonDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #verde {
+        height: 100px;
+        width: 100px;
+    }
+    #verdeDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #verdeNeonDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #rojo {
+        height: 100px;
+        width: 100px;
+    }
+    #rojoDisplay {
+        height: 100px;
+        width: 100px;
+    }
+    #rojoNeonDisplay {
+        height: 100px;
+        width: 100px;
+    }
+
+@media (min-width: 1200px) {
+
+    #azul {
+        height: 450px;
+        width: 450px;
+    }
+    #azulDisplay {
+        height: 450px;
+        width: 450px;
+    }
+    #azulNeonDisplay {
+        height: 450px;
+        width: 450px;
+    }
+    #amarillo {
+        height: 450px;
+        width: 450px;
+    }
+    #amarilloDisplay {
+        height: 450px;
+        width: 450px;
+    }
+    #amarilloNeonDisplay {
+        height: 450px;
+        width: 450px;
+    }
+    #verde {
+        height: 450px;
+        width: 450px;
+    }
+    #verdeDisplay {
+        height: 450px;
+        width: 450px;
+    }
+    #verdeNeonDisplay {
+        height: 450px;
+        width: 450px;
+    }
+    #rojo {
+        height: 450px;
+        width: 450px;
+    }
+    #rojoDisplay {
+        height: 450px;
+        width: 450px;
+    }
+    #rojoNeonDisplay {
+        height: 450px;
+        width: 450px;
+    }
+}
+}
