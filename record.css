@@ -1,0 +1,12 @@
+#scrollbox {
+    height: 80vh;
+    background-color: aqua;
+    overflow: scroll;
+    width: 600px;
+    height: 100px;
+    }
+body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        background-image: url("./yellow-orange-background.jpg");
+}
