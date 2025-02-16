@@ -12,7 +12,7 @@ jugar.onclick = function() {
         if (usuarioGuardado === null) {
             localStorage.setItem(nombre.value, 0)
             alert("nuevo usuario")
-            window.location="./try.html"
+            window.location="./juego.html"
         }
         else {
             window.location="./juego.html"    
