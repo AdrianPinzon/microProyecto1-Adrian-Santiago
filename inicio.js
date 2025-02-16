@@ -15,7 +15,7 @@ jugar.onclick = function() {
             window.location="./try.html"
         }
         else {
-            window.location="./try.html"    
+            window.location="./juego.html"    
         }
     }
 
