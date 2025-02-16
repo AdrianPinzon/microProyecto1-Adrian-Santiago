@@ -301,7 +301,7 @@ function playError() {
   };
   
   menu.onclick = function () {
-    window.location = "./micro.html"
+    window.location = "./index.html"
   }
 
   record.onclick = function () {
