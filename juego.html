@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tryCss.css"> <!-- Recuerda cambiar este link en el repositorio
+     igual que el script de abajo--> 
+</head>
+<body>
+    <div class="cuerpo">
+        <div id="titulo">
+            <p class="letra">S</p>
+            <p class="letra">I</p>
+            <p class="letra">M</p>
+            <p class="letra">O</p>
+            <p class="letra">N</p>
+            <p> </p>
+            <p class="letra">D</p>
+            <p class="letra">I</p>
+            <p class="letra">C</p>
+            <p class="letra">E</p>
+        </div>   
+    </div>
+    <div class="botones">
+        <div id="azulRojo">
+            <button type="button" class="press" id="azul"></button> <!-- Botón interactivo que se ilumina cuando el jugador lo presiona-->
+            <button type="button" class="press" id="azulDisplay"></button> <!-- Este y todos los que digan Display son unos botones que no funcionan, solo se usan para la animación del patron a seguir de los colores -->
+            <button type="button" class="press" id="azulNeonDisplay"></button> <!-- Este (y todos los que digan NeonDisplay) también es para la animación y se activa medio segundo para imitar el click-->
+            <audio id="azulSonido" src="./azul.mp3" autoplay="false" ></audio> <!-- y este es el audio que suena cuando se presiona el azul-->
+            <button type="button" class="press" id="rojo"></button>
+            <button type="button" class="press" id="rojoDisplay"></button>
+            <button type="button" class="press" id="rojoNeonDisplay"></button>
+            <audio id="rojoSonido" src="./rojo.mp3" autoplay="false" ></audio>
+        </div>
+<!-- Aquí hice dos divs para poder arreglarlos uno encima del otro con flex -->
+        <div id="amarilloVerde">
+            <button type="button" class="press" id="amarillo"></button>
+            <button type="button" class="press" id="amarilloDisplay"></button>
+            <button type="button" class="press" id="amarilloNeonDisplay"></button>
+            <audio id="amarilloSonido" src="./amarillo.mp3" autoplay="false" ></audio>
+            <button type="button" class="press" id="verde"></button>
+            <button type="button" class="press" id="verdeDisplay"></button>
+            <button type="button" class="press" id="verdeNeonDisplay"></button>
+            <audio id="verdeSonido" src="./verde.mp3" autoplay="false" ></audio>
+        </div>
+        <audio id="error" src="./error.mp3" autoplay="false"></audio>
+    </div>
+<!-- Este div sigue oculto, no lo he tocado, recuerda que es el pop-up-->
+    <div class="container">
+        <div class="overlay" id="overlay"></div>
+        <div class="panel" id="finalJuego">
+            <h1 id="mensajeFinal"></h1>
+            <h2>PUNTUACION</h2>
+            <h3 id="finalScore"></h3>
+            <button type="button" id="volverJugar">VOLVER A JUGAR</button>
+            <button type="button" id="record">RECORD</button>
+            <button type="button" id="menu">MENÚ</button>
+        </div>
+    </div>
+    
+<!--Y esta es la parte donde está el contador de puntos y el botón de comenzar-->
+    <div class="bottom">
+        <div id="puntaje">
+            <p>PUNTUACION: </p>
+            <p id="currentScore">0</p>
+        </div>
+        <button type="button" id="comenzar">GO</button>
+        <script src="./tryJavaScript.js"></script> <!-- Esto es lo otro que habría que cambiar -->
+    </div>
+   
+</body>
+</html>
